@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main
+      id="main"
+      class="min-vh-100 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div
+        class="search-input w-50 my-4 d-flex justify-content-center align-items-center"
+      >
+        <input
+          id="search-input-field"
+          type="text"
+          class="form-control me-3"
+          placeholder="Enter City Name ..."
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <button class="btn btn-primary" id="search-button">Search</button>
+      </div>
+      
+        
+     
+
+      <div class="container rounded-3">
+        <div class="row p-5" id="main-body">
+          <div class="col-md-12">
+            <div
+              class="loader-div d-flex justify-content-center align-items-center"
+            >
+              <span class="loader"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
