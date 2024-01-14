@@ -13,11 +13,25 @@ const weekDays = [
   "Saturday",
 ];
 
+searchInput.addEventListener('keypress', (e) => {
+  if (e.key == 'Enter') {
+    getWeatherCaller(searchInput.value)
+
+  }
+})
 searchBtn.addEventListener("click", () =>
-  searchInput.value
-    ? getWeatherData(null, null, searchInput.value)
-    : alert("Enter City Name!!")
+  getWeatherCaller(searchInput.value)
 );
+
+function getWeatherCaller(value) {
+  value
+    ? getWeatherData(null, null, searchInput.value)
+    : alert("Enter City Name!!");
+}
+
+
+
+
 
 function getLocation() {
   const geoLocator = navigator.geolocation;
